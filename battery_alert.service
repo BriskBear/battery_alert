@@ -1,0 +1,9 @@
+[Unit]
+Description=Provide Audible alert and notification when battery is low
+
+[Service]
+ExecStart=/usr/bin/battery_alert
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
