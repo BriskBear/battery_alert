@@ -25,5 +25,6 @@ done
 sudo cp *.service /etc/systemd/system/
 sudo cp *_alert /usr/bin/
 
-# Start the service
+# Enable+Start the service
+sudo systemctl enable battery_alert
 sudo systemctl start battery_alert
